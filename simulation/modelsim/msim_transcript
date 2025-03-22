@@ -1,5 +1,4 @@
-# Reading D:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
-# ERROR: No extended dataflow license exists
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
 # do test_module_run_msim_rtl_verilog.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -8,45 +7,62 @@
 # vmap work rtl_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap work rtl_work 
-# Copying D:/intelFPGA_lite/17.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+D:/probe/test_module {D:/probe/test_module/test_module.v}
+# vlog -sv -work work +incdir+D:/ProjectsVerilog/Yandex_2025 {D:/ProjectsVerilog/Yandex_2025/test_module.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:40:17 on Dec 14,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/probe/test_module" D:/probe/test_module/test_module.v 
+# Start time: 02:35:14 on Mar 23,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/ProjectsVerilog/Yandex_2025" D:/ProjectsVerilog/Yandex_2025/test_module.sv 
 # -- Compiling module test_module
 # 
 # Top level modules:
 # 	test_module
-# End time: 12:40:17 on Dec 14,2021, Elapsed time: 0:00:00
+# End time: 02:35:14 on Mar 23,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -vlog01compat -work work +incdir+D:/probe/test_module/simulation/modelsim {D:/probe/test_module/simulation/modelsim/test_module.vt}
+vlog -reportprogress 300 -work work D:/ProjectsVerilog/Yandex_2025/test_module.sv
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:40:17 on Dec 14,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/probe/test_module/simulation/modelsim" D:/probe/test_module/simulation/modelsim/test_module.vt 
-# -- Compiling module test_module_vlg_tst
+# Start time: 02:35:51 on Mar 23,2025
+# vlog -reportprogress 300 -work work D:/ProjectsVerilog/Yandex_2025/test_module.sv 
+# -- Compiling module test_module
 # 
 # Top level modules:
-# 	test_module_vlg_tst
-# End time: 12:40:17 on Dec 14,2021, Elapsed time: 0:00:00
+# 	test_module
+# End time: 02:35:51 on Mar 23,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/ProjectsVerilog/Yandex_2025/test_module_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:35:51 on Mar 23,2025
+# vlog -reportprogress 300 -work work D:/ProjectsVerilog/Yandex_2025/test_module_tb.sv 
+# -- Compiling module test_module_tb
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  test_module_vlg_tst
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" test_module_vlg_tst 
-# Start time: 12:40:18 on Dec 14,2021
-# Loading work.test_module_vlg_tst
+# Top level modules:
+# 	test_module_tb
+# End time: 02:35:51 on Mar 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui -l msim_transcript work.test_module_tb
+# vsim -gui -l msim_transcript work.test_module_tb 
+# Start time: 02:36:15 on Mar 23,2025
+# Loading sv_std.std
+# Loading work.test_module_tb
 # Loading work.test_module
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-# Running testbench
-# Break key hit
-# Simulation stop requested.
-# End time: 12:43:12 on Dec 14,2021, Elapsed time: 0:02:54
+add wave  \
+sim:/test_module_tb/clk_in \
+sim:/test_module_tb/reset_in \
+sim:/test_module_tb/data_in \
+sim:/test_module_tb/out_0 \
+sim:/test_module_tb/out_valid_0 \
+sim:/test_module_tb/out_1 \
+sim:/test_module_tb/out_valid_1 \
+sim:/test_module_tb/out_2 \
+sim:/test_module_tb/out_valid_2 \
+sim:/test_module_tb/out_3 \
+sim:/test_module_tb/out_valid_3
+run 400ns
+# ** Note: $stop    : D:/ProjectsVerilog/Yandex_2025/test_module_tb.sv(65)
+#    Time: 210 ns  Iteration: 0  Instance: /test_module_tb
+# Break in Module test_module_tb at D:/ProjectsVerilog/Yandex_2025/test_module_tb.sv line 65
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/ProjectsVerilog/Yandex_2025/simulation/modelsim/wave.do
+# End time: 02:39:56 on Mar 23,2025, Elapsed time: 0:03:41
 # Errors: 0, Warnings: 0

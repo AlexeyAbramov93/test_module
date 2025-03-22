@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/ProjectsVerilog/Yandex_2025/simulation/qsim
+vhard_block
+Z1 !s110 1742683458
+!i10b 1
+!s100 h]aDMWd3mR@XEFRRJ^:o>0
+I>mnh_UKQjM8<5V1h4IDBB1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1742683456
+Z4 8test_module.vo
+Z5 Ftest_module.vo
+L0 4088
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1742683458.000000
+Z8 !s107 test_module.vo|
+Z9 !s90 -work|work|test_module.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vtest_module
+R1
+!i10b 1
+!s100 SnzT_OQJQg8hbHEjfL@hT3
+IYY4j>_3gkmb>TBC=mgjMj3
+R2
+R0
+R3
+R4
+R5
+L0 32
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vtest_module_vlg_vec_tst
+R1
+!i10b 1
+!s100 d35[9``J8UY:o[4iPc4fh2
+IWga@YI9Ij<`BKYk=Q:Z@W2
+R2
+R0
+w1742683455
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 30
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11

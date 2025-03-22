@@ -1,5 +1,5 @@
 Analysis & Synthesis report for test_module
-Tue Dec 14 12:39:13 2021
+Sun Mar 23 02:34:21 2025
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -19,6 +19,7 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
  11. Post-Synthesis Netlist Statistics for Top Partition
  12. Elapsed Time Per Partition
  13. Analysis & Synthesis Messages
+ 14. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -45,15 +46,15 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Dec 14 12:39:13 2021       ;
+; Analysis & Synthesis Status        ; Successful - Sun Mar 23 02:34:21 2025       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; test_module                                 ;
 ; Top-level Entity Name              ; test_module                                 ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 78                                          ;
-;     Total combinational functions  ; 78                                          ;
-;     Dedicated logic registers      ; 44                                          ;
-; Total registers                    ; 44                                          ;
+; Total logic elements               ; 107                                         ;
+;     Total combinational functions  ; 79                                          ;
+;     Dedicated logic registers      ; 72                                          ;
+; Total registers                    ; 72                                          ;
 ; Total pins                         ; 46                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -69,7 +70,7 @@ agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                     ; 10M08DCF256I7G     ;                    ;
+; Device                                                                     ; 10M08DCF256C8G     ;                    ;
 ; Top-level entity name                                                      ; test_module        ; test_module        ;
 ; Family name                                                                ; MAX 10             ; Cyclone V          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
@@ -155,7 +156,7 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 2           ;
+; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
@@ -167,45 +168,45 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                     ;
-+----------------------------------+-----------------+------------------------+------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path       ; Library ;
-+----------------------------------+-----------------+------------------------+------------------------------------+---------+
-; test_module.v                    ; yes             ; User Verilog HDL File  ; D:/probe/test_module/test_module.v ;         ;
-+----------------------------------+-----------------+------------------------+------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                      ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                  ; Library ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------+---------+
+; test_module.sv                   ; yes             ; User SystemVerilog HDL File  ; D:/ProjectsVerilog/Yandex_2025/test_module.sv ;         ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------+---------+
 
 
-+--------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                  ;
-+---------------------------------------------+----------------+
-; Resource                                    ; Usage          ;
-+---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 78             ;
-;                                             ;                ;
-; Total combinational functions               ; 78             ;
-; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 38             ;
-;     -- 3 input functions                    ; 4              ;
-;     -- <=2 input functions                  ; 36             ;
-;                                             ;                ;
-; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 78             ;
-;     -- arithmetic mode                      ; 0              ;
-;                                             ;                ;
-; Total registers                             ; 44             ;
-;     -- Dedicated logic registers            ; 44             ;
-;     -- I/O registers                        ; 0              ;
-;                                             ;                ;
-; I/O pins                                    ; 46             ;
-;                                             ;                ;
-; Embedded Multiplier 9-bit elements          ; 0              ;
-;                                             ;                ;
-; Maximum fan-out node                        ; reset_in~input ;
-; Maximum fan-out                             ; 48             ;
-; Total fan-out                               ; 450            ;
-; Average fan-out                             ; 2.10           ;
-+---------------------------------------------+----------------+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimated Total logic elements              ; 107          ;
+;                                             ;              ;
+; Total combinational functions               ; 79           ;
+; Logic element usage by number of LUT inputs ;              ;
+;     -- 4 input functions                    ; 40           ;
+;     -- 3 input functions                    ; 1            ;
+;     -- <=2 input functions                  ; 38           ;
+;                                             ;              ;
+; Logic elements by mode                      ;              ;
+;     -- normal mode                          ; 79           ;
+;     -- arithmetic mode                      ; 0            ;
+;                                             ;              ;
+; Total registers                             ; 72           ;
+;     -- Dedicated logic registers            ; 72           ;
+;     -- I/O registers                        ; 0            ;
+;                                             ;              ;
+; I/O pins                                    ; 46           ;
+;                                             ;              ;
+; Embedded Multiplier 9-bit elements          ; 0            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; clk_in~input ;
+; Maximum fan-out                             ; 72           ;
+; Total fan-out                               ; 508          ;
+; Average fan-out                             ; 2.09         ;
++---------------------------------------------+--------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -213,7 +214,7 @@ agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; |test_module               ; 78 (78)             ; 44 (44)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 46   ; 0            ; 0          ; |test_module        ; test_module ; work         ;
+; |test_module               ; 79 (79)             ; 72 (72)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 46   ; 0            ; 0          ; |test_module        ; test_module ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -223,7 +224,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 44    ;
+; Total registers                              ; 72    ;
 ; Number of registers using Synchronous Clear  ; 9     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -233,17 +234,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                              ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |test_module|out_1[1]~reg0    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |test_module|out_2[7]~reg0    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |test_module|out_3[2]~reg0    ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |test_module|out_valid_1~reg0 ;
-; 6:1                ; 8 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; Yes        ; |test_module|out_0[6]~reg0    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 3:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |test_module|out_reg[1][0] ;
+; 3:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |test_module|out_reg[2][0] ;
+; 3:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |test_module|out_reg[3][0] ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; Yes        ; |test_module|out_reg[0][0] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
 +-----------------------------------------------------------------------------+
@@ -262,19 +262,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 46                          ;
-; cycloneiii_ff         ; 44                          ;
+; cycloneiii_ff         ; 72                          ;
 ;     ENA               ; 27                          ;
 ;     ENA SCLR          ; 8                           ;
 ;     SCLR              ; 1                           ;
-;     plain             ; 8                           ;
-; cycloneiii_lcell_comb ; 78                          ;
-;     normal            ; 78                          ;
-;         2 data inputs ; 36                          ;
-;         3 data inputs ; 4                           ;
-;         4 data inputs ; 38                          ;
+;     plain             ; 36                          ;
+; cycloneiii_lcell_comb ; 79                          ;
+;     normal            ; 79                          ;
+;         2 data inputs ; 38                          ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 40                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 3.44                        ;
+; Max LUT depth         ; 6.00                        ;
+; Average LUT depth     ; 3.11                        ;
 +-----------------------+-----------------------------+
 
 
@@ -293,24 +293,33 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Tue Dec 14 12:38:55 2021
+    Info: Processing started: Sun Mar 23 02:33:55 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off test_module -c test_module
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file test_module.v
-    Info (12023): Found entity 1: test_module File: D:/probe/test_module/test_module.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file test_module.sv
+    Info (12023): Found entity 1: test_module File: D:/ProjectsVerilog/Yandex_2025/test_module.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file test_module_tb.sv
+    Info (12023): Found entity 1: test_module_tb File: D:/ProjectsVerilog/Yandex_2025/test_module_tb.sv Line: 2
 Info (12127): Elaborating entity "test_module" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 124 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 180 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 10 input pins
     Info (21059): Implemented 36 output pins
-    Info (21061): Implemented 78 logic cells
+    Info (21061): Implemented 134 logic cells
+Info (144001): Generated suppressed messages file D:/ProjectsVerilog/Yandex_2025/output_files/test_module.map.smsg
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 603 megabytes
-    Info: Processing ended: Tue Dec 14 12:39:13 2021
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:29
+    Info: Peak virtual memory: 4752 megabytes
+    Info: Processing ended: Sun Mar 23 02:34:21 2025
+    Info: Elapsed time: 00:00:26
+    Info: Total CPU time (on all processors): 00:00:52
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in D:/ProjectsVerilog/Yandex_2025/output_files/test_module.map.smsg.
 
 

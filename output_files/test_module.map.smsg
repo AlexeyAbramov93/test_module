@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at test_module.sv(33): always construct contains both blocking and non-blocking assignments File: D:/ProjectsVerilog/Yandex_2025/test_module.sv Line: 33

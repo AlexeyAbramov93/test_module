@@ -148,19 +148,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "clk_in",
-					"strict" : false
-				},
-				{
 					"name" : "reset_in",
 					"strict" : false
 				},
 				{
-					"name" : "data_in[0]",
+					"name" : "clk_in",
 					"strict" : false
 				},
 				{
 					"name" : "data_in[1]",
+					"strict" : false
+				},
+				{
+					"name" : "data_in[0]",
 					"strict" : false
 				},
 				{
